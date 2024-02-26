@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "GameObject.h"
+#include "SpaceSheep.h"
 #include "quaternion.h"
 #include "quaternion_io.h"
 
@@ -13,15 +13,7 @@ double GetRad(double degrees)
 
 int main() {
 
-    quaternion::QuaternionIO::print_style = 1;
-    common::GameObject go{};
-    double angle  = 30;
-    quaternion::Quaternion<double> x1(std::cos(GetRad(angle)), 0., 0., std::sin(GetRad(angle)));
 
-    quaternion::QuaternionIO::print<double>(std::cout, go.GetPosition());
-    go.Rotate(x1);
-    quaternion::QuaternionIO::print<double>(std::cout, go.GetPosition());
-    //lib L;
-    //L.Solve(1,0,0);
+
     return 0;
 }
