@@ -12,9 +12,14 @@ set(SOURCE
         include/quaternion.h
         include/quaternion_io.h
         include/quaternion_utils.h
+        include/Teleportation.h
+        include/RotateObjXY.h
 
         src/SpaceSheep.cpp
-        )
+        src/Teleportation.cpp
+        src/RotateObjXY.cpp
+        src/MoveObj.cpp
+        src/GameObjectBase.cpp )
 
 add_library(${PROJECT_NAME} STATIC ${SOURCE})
 

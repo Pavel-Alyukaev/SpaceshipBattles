@@ -1,8 +1,7 @@
 ﻿#include "GameObjectBase.h"
-
 GameObjectBase::~GameObjectBase() = default;
 
-void GameObjectBase::SetOrientation(quaternion::Quaternion<double>& quat)
+void GameObjectBase::SetOrientation(quaternion::Quaternion<double> quat)
 {
     m_quaternion = quat;
 }
@@ -15,7 +14,7 @@ quaternion::Quaternion<double> GameObjectBase::GetOrientation() const
 	return m_quaternion.value();
 }
 
-void GameObjectBase::SetPosition(std::tuple<double, double, double>& pos)
+void GameObjectBase::SetPosition(std::tuple<double, double, double> pos)
 {
     m_position = pos;
 }

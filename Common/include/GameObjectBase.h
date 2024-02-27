@@ -7,9 +7,9 @@ class GameObjectBase : public IGameObject
 {
 public:
     ~GameObjectBase() override;
-    void SetOrientation(quaternion::Quaternion<double>&) override;
+    void SetOrientation(quaternion::Quaternion<double>) override;
     [[nodiscard]] quaternion::Quaternion<double> GetOrientation() const override;
-    void SetPosition(std::tuple<double, double, double>&) override;
+    void SetPosition(std::tuple<double, double, double>) override;
     [[nodiscard]] std::tuple<double, double, double> GetPosition() const override;
 
 private:

@@ -5,17 +5,14 @@
 
 #pragma once
 #include <ICommand.h>
-
 #include "IGameObject.h"
 
 class Teleportation :  public common::ICommand
 {
 public:
-	Teleportation();
 	Teleportation(IGameObject*);
 	~Teleportation();
 
-	Teleportation* SetObject(IGameObject*);
 	Teleportation* SetPosition(std::tuple<double, double, double>&);
 	void Execute() override;
 
