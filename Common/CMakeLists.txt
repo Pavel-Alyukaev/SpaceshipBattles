@@ -29,7 +29,7 @@ target_include_directories(${PROJECT_NAME}
 
 if (MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE
-            /W4
+            /W4 /WX-
             )
 else ()
     target_compile_options(${PROJECT_NAME} PRIVATE
