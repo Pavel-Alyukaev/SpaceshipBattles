@@ -26,5 +26,5 @@ TEST(common, Rotation)
     rot.SetAngle(angle)->Execute();
     auto pos = sh.GetOrientation();
 
-    ASSERT_EQ(pos,newOrient);
+    ASSERT_EQ(pos,newOrient); 
 }
